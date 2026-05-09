@@ -420,9 +420,9 @@
             else if (compScore >= WINNING_SCORE) {
                 gameActive = false;
                 setButtonsEnabled(false);
-                matchWinnerEl.innerHTML = '💀😭 COMPUTER WON THE MATCH! BETTER LUCK NEXT TIME 😭💀';
+                matchWinnerEl.innerHTML = '😭 COMPUTER WON THE MATCH! BETTER LUCK NEXT TIME 😭';
                 matchWinnerEl.style.color = '#f44336';
-                resultTextEl.innerHTML = '💀 Match Over - Computer wins 💀';
+                resultTextEl.innerHTML = ' Match Over - Computer wins 💀';
                 playAgainBtn.style.display = 'block';
                 return true;
             }
@@ -470,7 +470,7 @@
                 resultTextEl.className = 'result-text win';
             } else if (winner === 'computer') {
                 compScore++;
-                resultTextEl.innerHTML = '💀 Computer wins this round! 💀';
+                resultTextEl.innerHTML = ' Computer wins this round! 💀';
                 resultTextEl.className = 'result-text lose';
             } else {
                 resultTextEl.innerHTML = '🤝 It\'s a tie! 🤝';
